@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="scroll-smooth">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ساليكس | سوق يقرّبك من المتاجر المستقلة</title>
   <meta name="description" content="ساليكس منصة عربية لاكتشاف المنتجات والمتاجر المستقلة والتواصل مع أصحابها." />
   
-  <!-- خط أميري من Google Fonts -->
+  <!-- خط أميري عالي الجودة -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   
-  <!-- Tailwind CSS & Lucide Icons -->
+  <!-- مكتبة التنسيق Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- مكتبة الأيقونات Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
@@ -21,97 +22,97 @@
     }
   </style>
 </head>
-<body class="bg-[#faf8f5] text-[#25261f] antialiased">
+<body class="bg-[#fcfaf7] text-[#25261f] antialiased">
 
-  <!-- الهيدر البسيط (بدون أزرار) -->
-  <header class="w-full border-b border-[#e8e4dc] bg-[#faf8f5]">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+  <!-- الهيدر / الشريط العلوي -->
+  <header class="w-full border-b border-[#eae6df] bg-white/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
       <div class="flex items-center gap-3">
-        <span class="flex size-10 items-center justify-center rounded-xl bg-[#25261f] text-white font-bold text-xl">S</span>
-        <span class="font-bold text-3xl text-[#25261f]">ساليكس</span>
+        <span class="flex size-12 items-center justify-center rounded-2xl bg-[#25261f] text-white font-bold text-2xl shadow-md">S</span>
+        <span class="font-bold text-3xl tracking-tight text-[#25261f]">ساليكس</span>
       </div>
-      <p class="text-lg text-[#68675f] font-medium hidden sm:block">سوق عربي للمتاجر المستقلة</p>
+      <span class="text-xl text-[#7a786f] font-medium hidden sm:inline-block">سوق عربي للمتاجر المستقلة</span>
     </div>
   </header>
 
-  <!-- المقدمة والبطاقات -->
-  <main class="mx-auto max-w-6xl px-6 py-12 lg:py-16">
+  <!-- القسم الرئيسي / مقدمة الصفحة -->
+  <main class="mx-auto max-w-6xl px-6 py-16">
     
-    <!-- عنوان واسع وشرح بسيط -->
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <h1 class="font-bold text-4xl leading-relaxed sm:text-5xl text-[#1c1d1a]">
-        أشياء تحبّها، <span class="text-[#8c7143]">من ناس يصنعونها.</span>
+      <h1 class="font-bold text-4xl leading-relaxed sm:text-6xl text-[#1c1d1a]">
+        أشياء تحبّها، <br />
+        <span class="text-[#8c7143]">من ناس يصنعونها.</span>
       </h1>
-      <p class="mt-6 text-xl leading-loose text-[#5c5b54]">
+      <p class="mt-6 text-2xl leading-relaxed text-[#5c5b54]">
         ساليكس مساحة تجمع المتاجر المستقلة والمنتجات المميزة في تجربة عربية واحدة. تعرّف على أصحاب المتاجر وتواصل معهم مباشرةً.
       </p>
     </div>
 
-    <!-- شبكة البطاقات النصية -->
+    <!-- شبكة البطاقات المصممة بالأيقونات الكبيرة -->
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       
       <!-- بطاقة 1 -->
-      <div class="rounded-3xl border border-[#e8e4dc] bg-white p-8 shadow-sm">
-        <div class="flex size-12 items-center justify-center rounded-2xl bg-[#f2ebd9] text-[#7a643b] mb-6">
-          <i data-lucide="sparkles" class="w-6 h-6"></i>
+      <div class="rounded-[32px] border border-[#eae6df] bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex size-20 items-center justify-center rounded-2xl bg-[#f5efe4] text-[#8c7143] mb-6">
+          <i data-lucide="sparkles" class="w-10 h-10"></i>
         </div>
         <h2 class="font-bold text-2xl text-[#1c1d1a] mb-3">قطع يدوية فريدة</h2>
-        <p class="text-lg leading-relaxed text-[#5c5b54]">
-          تشكيلة متنوعة من المنتجات المصنوعة بشغف وعناية، تضفي لمسة خاصة على اختيارك.
+        <p class="text-xl leading-relaxed text-[#68675f]">
+          تشكيلة متنوعة من المنتجات المصنوعة بشغف وعناية، تضفي لمسة خاصة وفريدة على اختيارك.
         </p>
       </div>
 
       <!-- بطاقة 2 -->
-      <div class="rounded-3xl border border-[#e8e4dc] bg-white p-8 shadow-sm">
-        <div class="flex size-12 items-center justify-center rounded-2xl bg-[#e3e8da] text-[#465737] mb-6">
-          <i data-lucide="store" class="w-6 h-6"></i>
+      <div class="rounded-[32px] border border-[#eae6df] bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex size-20 items-center justify-center rounded-2xl bg-[#eaf0e3] text-[#4d633a] mb-6">
+          <i data-lucide="store" class="w-10 h-10"></i>
         </div>
         <h2 class="font-bold text-2xl text-[#1c1d1a] mb-3">متاجر لها حكاية</h2>
-        <p class="text-lg leading-relaxed text-[#5c5b54]">
-          مساحة مخصصة لكل تاجر مستقل يشارك فيها قصة متجره وتفاصيل هوية منتجاته.
+        <p class="text-xl leading-relaxed text-[#68675f]">
+          مساحة مخصصة لكل تاجر مستقل يشارك فيها قصة متجره وتفاصيل هوية منتجاته مع المتسوقين.
         </p>
       </div>
 
       <!-- بطاقة 3 -->
-      <div class="rounded-3xl border border-[#e8e4dc] bg-white p-8 shadow-sm">
-        <div class="flex size-12 items-center justify-center rounded-2xl bg-[#e9e2f0] text-[#5c496e] mb-6">
-          <i data-lucide="message-circle" class="w-6 h-6"></i>
+      <div class="rounded-[32px] border border-[#eae6df] bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex size-20 items-center justify-center rounded-2xl bg-[#eee8f5] text-[#5e4d73] mb-6">
+          <i data-lucide="message-square" class="w-10 h-10"></i>
         </div>
         <h2 class="font-bold text-2xl text-[#1c1d1a] mb-3">تواصل مباشر</h2>
-        <p class="text-lg leading-relaxed text-[#5c5b54]">
-          محادثة مباشرة وواضحة تجمع بين المتسوق وصاحب المتجر للإجابة عن الاستفسارات.
+        <p class="text-xl leading-relaxed text-[#68675f]">
+          محادثة مباشرة وواضحة تجمع بين المتسوق وصاحب المتجر للإجابة عن الاستفسارات وتوفير الدعم.
         </p>
       </div>
 
       <!-- بطاقة 4 -->
-      <div class="rounded-3xl border border-[#e8e4dc] bg-white p-8 shadow-sm">
-        <div class="flex size-12 items-center justify-center rounded-2xl bg-[#f5e6e1] text-[#804f43] mb-6">
-          <i data-lucide="shield-check" class="w-6 h-6"></i>
+      <div class="rounded-[32px] border border-[#eae6df] bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex size-20 items-center justify-center rounded-2xl bg-[#f7ebe8] text-[#8a4e41] mb-6">
+          <i data-lucide="shield-check" class="w-10 h-10"></i>
         </div>
         <h2 class="font-bold text-2xl text-[#1c1d1a] mb-3">شفافية وموثوقية</h2>
-        <p class="text-lg leading-relaxed text-[#5c5b54]">
-          تجربة تسوق آمنة مع توفير معلومات واضحة وأدوات تضمن راحة واستحقاق الطرفين.
+        <p class="text-xl leading-relaxed text-[#68675f]">
+          تجربة تسوق آمنة مع توفير معلومات واضحة وأدوات تضمن راحة واستحقاق كافة الأطراف.
         </p>
       </div>
 
       <!-- بطاقة 5 -->
-      <div class="rounded-3xl border border-[#e8e4dc] bg-white p-8 shadow-sm">
-        <div class="flex size-12 items-center justify-center rounded-2xl bg-[#f2ede4] text-[#6b6250] mb-6">
-          <i data-lucide="compass" class="w-6 h-6"></i>
+      <div class="rounded-[32px] border border-[#eae6df] bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex size-20 items-center justify-center rounded-2xl bg-[#f2eee8] text-[#736856] mb-6">
+          <i data-lucide="compass" class="w-10 h-10"></i>
         </div>
         <h2 class="font-bold text-2xl text-[#1c1d1a] mb-3">دعم الابتكار المحلي</h2>
-        <p class="text-lg leading-relaxed text-[#5c5b54]">
-          نعزز حضور المشاريع العربية والمتاجر الناشئة عبر تقديم منصة مرنة تجمعهم بالجمهور.
+        <p class="text-xl leading-relaxed text-[#68675f]">
+          نعزز حضور المشاريع العربية والمتاجر الناشئة عبر تقديم منصة مرنة تجمعهم بالجمهور المستهدف.
         </p>
       </div>
 
       <!-- بطاقة 6 -->
-      <div class="rounded-3xl border border-[#e8e4dc] bg-white p-8 shadow-sm">
-        <div class="flex size-12 items-center justify-center rounded-2xl bg-[#e2f0d9] text-[#3e6629] mb-6">
-          <i data-lucide="package" class="w-6 h-6"></i>
+      <div class="rounded-[32px] border border-[#eae6df] bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex size-20 items-center justify-center rounded-2xl bg-[#e5f2e1] text-[#3d6930] mb-6">
+          <i data-lucide="package" class="w-10 h-10"></i>
         </div>
         <h2 class="font-bold text-2xl text-[#1c1d1a] mb-3">تفاصيل تصنع الفرق</h2>
-        <p class="text-lg leading-relaxed text-[#5c5b54]">
+        <p class="text-xl leading-relaxed text-[#68675f]">
           كل قطعة معروضة تعبر عن ذوق خاص واهتمام حقيقي بأدق التفاصيل من المصمم والصانع.
         </p>
       </div>
@@ -119,15 +120,16 @@
     </div>
   </main>
 
-  <!-- الفوتر النصي البسيط -->
-  <footer class="border-t border-[#e8e4dc] bg-white py-10 mt-12">
-    <div class="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-[#85837a] text-lg">
+  <!-- الفوتر النصي الأنيق -->
+  <footer class="border-t border-[#eae6df] bg-white py-12 mt-12">
+    <div class="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-[#7a786f] text-xl">
       <p>ساليكس - منصة عربية لاكتشاف المتاجر المستقلة والتواصل مع أصحابها.</p>
-      <p>barqaday@gmail.com</p>
+      <p class="font-bold text-[#25261f]">barqaday@gmail.com</p>
       <p>© 2026 ساليكس. جميع الحقوق محفوظة.</p>
     </div>
   </footer>
 
+  <!-- تفعيل الأيقونات -->
   <script>
     lucide.createIcons();
   </script>
