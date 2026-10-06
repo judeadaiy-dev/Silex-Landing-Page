@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ساليكس | سوق يقرّبك من المتاجر المستقلة</title>
-  <meta name="description" content="ساليكس منصة عربية لاكتشاف المنتجات والمتاجر المستقلة، والتواصل مباشرةً مع أصحابها." />
+  <title>ساليكس | وجهتك لاكتشاف المتاجر المستقلة</title>
+  <meta name="description" content="ساليكس منصة عربية تجسر الفجوة بين المتاجر المستقلة والمتسوقين عبر تقديم تجربة اكتشاف فريدة وتواصل مباشر." />
   
   <!-- الخطوط من Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
   
-  <!-- مكتبة Tailwind CSS للتنسيق السريع -->
+  <!-- مكتبة Tailwind CSS للتنسيق -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- مكتبة الأيقونات Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -24,48 +24,45 @@
 </head>
 <body class="relative min-h-screen overflow-x-hidden bg-[radial-gradient(ellipse_at_75%_5%,rgba(210,190,155,0.23),transparent_48%),linear-gradient(180deg,#f4efe6_0%,#faf8f5_680px)] text-[#25261f]">
 
-  <!-- الهيدر / الشريط العلوي -->
-  <header class="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-12">
-    <a href="#" class="flex items-center gap-2 font-extrabold text-2xl tracking-tight text-[#25261f]">
-      <span class="flex size-9 items-center justify-center rounded-xl bg-[#25261f] text-white">S</span>
+  <!-- الشريط العلوي / الهيدر -->
+  <header class="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-6 sm:px-8 lg:px-12">
+    <a href="#" class="flex items-center gap-2.5 font-extrabold text-2xl tracking-tight text-[#25261f]">
+      <span class="flex size-9 items-center justify-center rounded-xl bg-[#25261f] text-white font-bold text-lg">S</span>
       ساليكس
     </a>
-    <nav aria-label="التنقل الرئيسي" class="hidden items-center gap-8 text-sm text-[#68675f] md:flex">
-      <a href="#about" class="transition hover:text-[#25261f]">عن ساليكس</a>
+    <nav aria-label="التنقل الرئيسي" class="hidden items-center gap-8 text-sm font-medium text-[#68675f] md:flex">
+      <a href="#about" class="transition hover:text-[#25261f]">عن المنصة</a>
       <a href="#experience" class="transition hover:text-[#25261f]">كيف تعمل</a>
-      <a href="#contact" class="transition hover:text-[#25261f]">الخصوصية</a>
+      <a href="#contact" class="transition hover:text-[#25261f]">تواصل معنا</a>
     </nav>
-    <a href="#register" class="inline-flex items-center gap-2 rounded-full bg-[#25261f] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#44453b]">
-      ابدأ رحلتك
-      <i data-lucide="arrow-left" class="w-4 h-4"></i>
+    <a href="#about" class="inline-flex items-center gap-2 rounded-full border border-[#d9d5cc] bg-white/80 px-5 py-2.5 text-sm font-semibold text-[#25261f] shadow-sm transition hover:bg-white hover:border-[#aaa18f]">
+      اكتشف المزيد
+      <i data-lucide="arrow-down" class="w-4 h-4"></i>
     </a>
   </header>
 
   <!-- القسم الرئيسي / البطل -->
-  <section class="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-10 sm:px-8 sm:pt-16 lg:grid-cols-[1fr_0.9fr] lg:gap-16 lg:px-12 lg:pb-28 lg:pt-20">
+  <section class="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-8 sm:px-8 sm:pt-12 lg:grid-cols-[1fr_0.9fr] lg:gap-16 lg:px-12 lg:pb-28 lg:pt-16">
     <div class="relative z-10 max-w-2xl">
-      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-[#d9d0bf] bg-white/70 px-3.5 py-2 text-xs font-medium text-[#655c4c] shadow-sm">
+      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-[#d9d0bf] bg-white/80 px-4 py-2 text-xs font-semibold text-[#655c4c] shadow-sm">
         <span class="size-2 rounded-full bg-[#9a8055]"></span>
         سوق عربي للمتاجر المستقلة
       </div>
-      <h1 class="font-bold text-4xl leading-[1.25] tracking-tight sm:text-6xl lg:text-[60px]">
+      <h1 class="font-bold text-4xl leading-[1.25] tracking-tight sm:text-6xl lg:text-[58px]">
         أشياء تحبّها،<br />
         <span class="text-[#90764c]">من ناس يصنعونها.</span>
       </h1>
       <p class="mt-6 max-w-xl text-base leading-8 text-[#68675f] sm:text-lg sm:leading-9">
-        ساليكس مساحة تجمع المتاجر المستقلة والمنتجات المميزة في تجربة عربية واحدة. اكتشف، تعرّف على أصحاب المتاجر، وتواصل معهم مباشرةً.
+        ساليكس مساحة تجمع المتاجر المستقلة والمنتجات المميزة في تجربة عربية فريدة. اكتشف المنتجات الفريدة وتعرف على صُناعها وتواصل معهم مباشرةً.
       </p>
       <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-        <a href="#register" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#25261f] px-7 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(37,38,31,0.16)] transition hover:-translate-y-0.5 hover:bg-[#44453b]">
-          انضم إلى ساليكس
+        <a href="#experience" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#25261f] px-8 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(37,38,31,0.16)] transition hover:-translate-y-0.5 hover:bg-[#44453b]">
+          استكشف تجربة ساليكس
           <i data-lucide="arrow-left" class="w-4 h-4"></i>
-        </a>
-        <a href="#login" class="inline-flex min-h-12 items-center justify-center rounded-full border border-[#d9d5cc] bg-white/70 px-7 text-sm font-semibold text-[#34352e] transition hover:border-[#aaa18f] hover:bg-white">
-          لديّ حساب بالفعل
         </a>
       </div>
       <p class="mt-5 text-xs leading-6 text-[#85837a]">
-        ساليكس في مرحلة الإطلاق. قد تختلف المنتجات وتوفّرها بحسب المتاجر المشاركة.
+        منصة مخصصة لإبراز الهوية العربية ودعم المشاريع والتجار المستقلين.
       </p>
     </div>
 
@@ -76,16 +73,16 @@
       <div class="relative rounded-[34px] border border-white/80 bg-white/65 p-3 shadow-[0_32px_90px_rgba(68,58,42,0.15)] backdrop-blur-sm sm:rounded-[42px] sm:p-5">
         <div class="overflow-hidden rounded-[27px] border border-[#eeece5] bg-[#fbfaf7] sm:rounded-[32px]">
           <div class="flex items-center justify-between border-b border-[#efede7] px-5 py-4">
-            <span class="text-[11px] text-[#929087]">مساحة تلتقي فيها الحكايات</span>
+            <span class="text-[11px] font-medium text-[#929087]">مساحة تلتقي فيها الحكايات</span>
             <span class="flex items-center gap-2 text-sm font-semibold">
               <span class="size-2 rounded-full bg-[#a78b5d]"></span>
               اكتشف
             </span>
           </div>
           <div class="grid grid-cols-2 gap-3 p-4 sm:gap-4 sm:p-5">
-            <div class="col-span-2 flex min-h-[205px] flex-col justify-between overflow-hidden rounded-[25px] bg-[#e9e0d1] p-5 sm:min-h-[240px] sm:p-6">
+            <div class="col-span-2 flex min-h-[190px] flex-col justify-between overflow-hidden rounded-[25px] bg-[#e9e0d1] p-5 sm:min-h-[220px] sm:p-6">
               <div class="flex items-center justify-between">
-                <span class="rounded-full bg-white/75 px-3 py-1.5 text-[10px] font-medium text-[#645843]">اختيارات مستقلة</span>
+                <span class="rounded-full bg-white/80 px-3 py-1 text-[11px] font-semibold text-[#645843]">اختيارات حصرية</span>
                 <i data-lucide="heart" class="w-4 h-4 text-[#806d4f]"></i>
               </div>
               <div class="relative">
@@ -96,17 +93,17 @@
             </div>
             <div class="rounded-[22px] border border-[#efede7] bg-white p-3.5 sm:p-4">
               <div class="mb-3 flex aspect-[1.08] items-center justify-center rounded-[17px] bg-[#e5e9dc]">
-                <i data-lucide="package" class="w-10 h-10 text-[#647259]"></i>
+                <i data-lucide="package" class="w-8 h-8 text-[#647259]"></i>
               </div>
               <p class="text-xs font-semibold">تفاصيل تصنع الفرق</p>
-              <p class="mt-1 text-[10px] text-[#85837a]">منتجات من متاجر مستقلة</p>
+              <p class="mt-1 text-[10px] text-[#85837a]">منتجات مصممة بحب</p>
             </div>
             <div class="rounded-[22px] border border-[#efede7] bg-white p-3.5 sm:p-4">
               <div class="mb-3 flex aspect-[1.08] items-center justify-center rounded-[17px] bg-[#e9e3ee]">
-                <i data-lucide="store" class="w-10 h-10 text-[#706180]"></i>
+                <i data-lucide="store" class="w-8 h-8 text-[#706180]"></i>
               </div>
               <p class="text-xs font-semibold">متاجر لها حكاية</p>
-              <p class="mt-1 text-[10px] text-[#85837a]">تعرّف على أصحابها</p>
+              <p class="mt-1 text-[10px] text-[#85837a]">تعرّف على القائمين عليها</p>
             </div>
           </div>
           <div class="flex items-center justify-around border-t border-[#efede7] bg-white/80 px-3 py-3 text-[#8a887f]">
@@ -123,47 +120,47 @@
         </span>
         <span>
           <span class="block text-xs font-semibold">تواصل مباشر</span>
-          <span class="mt-0.5 block text-[10px] text-[#85837a]">بينك وبين صاحب المتجر</span>
+          <span class="mt-0.5 block text-[10px] text-[#85837a]">بين المتسوق وصاحب المتجر</span>
         </span>
       </div>
     </div>
   </section>
 
-  <!-- قسم الفكرة والمميزات -->
+  <!-- قسم الرؤية والمميزات -->
   <section id="about" class="relative border-y border-[#eeece5] bg-white/60">
     <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-12 lg:py-24">
       <div>
-        <p class="text-xs font-semibold tracking-widest text-[#92794f]">فكرتنا</p>
-        <h2 class="mt-4 max-w-md font-bold text-3xl leading-tight sm:text-4xl">
+        <p class="text-xs font-bold tracking-widest text-[#92794f] uppercase">فكرتنا</p>
+        <h2 class="mt-3 max-w-md font-bold text-3xl leading-tight sm:text-4xl text-[#25261f]">
           لأن وراء كل قطعة جميلة حكاية تستحق أن تُروى.
         </h2>
         <p class="mt-5 max-w-md text-sm leading-7 text-[#717067]">
-          نعمل على تقريب المسافة بين من يبحث عن شيء مميز، وبين المتجر المستقل الذي صنعه أو اختاره بعناية. في ساليكس، اكتشاف المنتج هو بداية علاقة مباشرة وواضحة.
+          نعمل في ساليكس على تقريب المسافة بين من يبحث عن المنتج الفريد، وبين المتجر المستقل الذي صنعه أو اختاره بعناية. تجربة تسوق ذات طابع إنساني وأصيل.
         </p>
       </div>
-      <div class="grid gap-3 sm:grid-cols-3">
-        <article class="rounded-[24px] border border-[#eeece5] bg-[#fffefa] p-5 sm:p-6">
+      <div class="grid gap-4 sm:grid-cols-3">
+        <article class="rounded-[24px] border border-[#eeece5] bg-[#fffefa] p-5 sm:p-6 shadow-sm">
           <span class="flex size-11 items-center justify-center rounded-2xl bg-[#f1e5d5] text-[#765b37]">
             <i data-lucide="compass" class="w-5 h-5"></i>
           </span>
-          <h3 class="mt-5 text-sm font-semibold">اكتشف ما يلهمك</h3>
-          <p class="mt-2 text-xs leading-6 text-[#77766e]">تصفّح منتجات ومتاجر مستقلة، واستلهم أفكارك من مجتمع يشاركك الاهتمامات.</p>
+          <h3 class="mt-5 text-sm font-bold text-[#25261f]">اكتشف ما يلهمك</h3>
+          <p class="mt-2 text-xs leading-6 text-[#77766e]">تصفّح منتجات ومتاجر صُممت بشغف واستلهم أفكارك بأسلوب بسيط.</p>
         </article>
 
-        <article class="rounded-[24px] border border-[#eeece5] bg-[#fffefa] p-5 sm:p-6">
+        <article class="rounded-[24px] border border-[#eeece5] bg-[#fffefa] p-5 sm:p-6 shadow-sm">
           <span class="flex size-11 items-center justify-center rounded-2xl bg-[#e5e9dc] text-[#536447]">
             <i data-lucide="store" class="w-5 h-5"></i>
           </span>
-          <h3 class="mt-5 text-sm font-semibold">مساحة لكل متجر</h3>
-          <p class="mt-2 text-xs leading-6 text-[#77766e]">لكل تاجر صفحة يعرض فيها منتجاته، ويعرّف الناس بقصة متجره وتفاصيله.</p>
+          <h3 class="mt-5 text-sm font-bold text-[#25261f]">مساحة لكل متجر</h3>
+          <p class="mt-2 text-xs leading-6 text-[#77766e]">واجهة مستقلة لكل تاجر يعرض فيها هوية متجره وقصته وتفاصيل منتجاته.</p>
         </article>
 
-        <article class="rounded-[24px] border border-[#eeece5] bg-[#fffefa] p-5 sm:p-6">
+        <article class="rounded-[24px] border border-[#eeece5] bg-[#fffefa] p-5 sm:p-6 shadow-sm">
           <span class="flex size-11 items-center justify-center rounded-2xl bg-[#e8e3ef] text-[#655579]">
             <i data-lucide="message-circle" class="w-5 h-5"></i>
           </span>
-          <h3 class="mt-5 text-sm font-semibold">تواصل مباشر وواضح</h3>
-          <p class="mt-2 text-xs leading-6 text-[#77766e]">اسأل عن المنتج وتفاصيل الطلب عبر محادثة مباشرة بين المتسوق وصاحب المتجر.</p>
+          <h3 class="mt-5 text-sm font-bold text-[#25261f]">تواصل مباشر</h3>
+          <p class="mt-2 text-xs leading-6 text-[#77766e]">استفسر عن أي تفاصيل مباشرةً من صاحب المتجر لتجربة شراء مريحة.</p>
         </article>
       </div>
     </div>
@@ -172,67 +169,60 @@
   <!-- خطوات العمل -->
   <section id="experience" class="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
     <div class="mx-auto max-w-2xl text-center">
-      <p class="text-xs font-semibold tracking-widest text-[#92794f]">تجربة بسيطة وواضحة</p>
-      <h2 class="mt-4 font-bold text-3xl sm:text-4xl">من الاكتشاف إلى التواصل، بخطوات قريبة.</h2>
+      <p class="text-xs font-bold tracking-widest text-[#92794f] uppercase">آلية العمل</p>
+      <h2 class="mt-3 font-bold text-3xl sm:text-4xl text-[#25261f]">تجربة واضحة وبسيطة للجميع</h2>
     </div>
-    <div class="mt-10 grid gap-4 sm:grid-cols-3">
-      <article class="relative rounded-[26px] border border-[#eeece5] bg-white/70 p-6 sm:p-7">
-        <span class="font-bold text-4xl text-[#b29a70]">١</span>
-        <h3 class="mt-5 text-base font-semibold">تصفّح</h3>
-        <p class="mt-2 text-sm leading-7 text-[#77766e]">اكتشف المنتجات والأفكار من متاجر متنوعة.</p>
-        <i data-lucide="arrow-up-left" class="absolute left-6 top-7 text-[#c4b99f] w-4 h-4"></i>
+    <div class="mt-12 grid gap-5 sm:grid-cols-3">
+      <article class="relative rounded-[26px] border border-[#eeece5] bg-white/70 p-6 sm:p-8 shadow-sm">
+        <span class="font-extrabold text-4xl text-[#b29a70]">٠١</span>
+        <h3 class="mt-4 text-base font-bold text-[#25261f]">تصفّح واكتشف</h3>
+        <p class="mt-2 text-sm leading-7 text-[#77766e]">استكشف المنتجات والمتاجر المميزة بمرونة وسلاسة عالية.</p>
       </article>
-      <article class="relative rounded-[26px] border border-[#eeece5] bg-white/70 p-6 sm:p-7">
-        <span class="font-bold text-4xl text-[#b29a70]">٢</span>
-        <h3 class="mt-5 text-base font-semibold">تعرّف</h3>
-        <p class="mt-2 text-sm leading-7 text-[#77766e]">اطّلع على تفاصيل المنتج وصفحة المتجر.</p>
-        <i data-lucide="arrow-up-left" class="absolute left-6 top-7 text-[#c4b99f] w-4 h-4"></i>
+      <article class="relative rounded-[26px] border border-[#eeece5] bg-white/70 p-6 sm:p-8 shadow-sm">
+        <span class="font-extrabold text-4xl text-[#b29a70]">٠٢</span>
+        <h3 class="mt-4 text-base font-bold text-[#25261f]">تعرّف على التفاصيل</h3>
+        <p class="mt-2 text-sm leading-7 text-[#77766e]">اطّلع على مواصفات القطع وقصة المتجر وصانع المنتج.</p>
       </article>
-      <article class="relative rounded-[26px] border border-[#eeece5] bg-white/70 p-6 sm:p-7">
-        <span class="font-bold text-4xl text-[#b29a70]">٣</span>
-        <h3 class="mt-5 text-base font-semibold">تواصل</h3>
-        <p class="mt-2 text-sm leading-7 text-[#77766e]">تحدث مع التاجر مباشرةً قبل إتمام طلبك.</p>
-        <i data-lucide="arrow-up-left" class="absolute left-6 top-7 text-[#c4b99f] w-4 h-4"></i>
+      <article class="relative rounded-[26px] border border-[#eeece5] bg-white/70 p-6 sm:p-8 shadow-sm">
+        <span class="font-extrabold text-4xl text-[#b29a70]">٠٣</span>
+        <h3 class="mt-4 text-base font-bold text-[#25261f]">تواصل وسهولة طلب</h3>
+        <p class="mt-2 text-sm leading-7 text-[#77766e]">تواصل مباشرة مع التاجر للإجابة عن أسئلتك قبل الشراء.</p>
       </article>
     </div>
   </section>
 
-  <!-- دافع الانضمام -->
+  <!-- قسم التعريف والتواصل -->
   <section class="px-5 pb-16 sm:px-8 sm:pb-20 lg:px-12">
-    <div class="relative mx-auto max-w-7xl overflow-hidden rounded-[32px] bg-[#292a23] px-6 py-10 text-white sm:rounded-[40px] sm:px-12 sm:py-14 lg:px-16">
+    <div class="relative mx-auto max-w-7xl overflow-hidden rounded-[32px] bg-[#292a23] px-6 py-12 text-white sm:rounded-[40px] sm:px-12 sm:py-16 lg:px-16">
       <div class="relative flex flex-col justify-between gap-8 sm:flex-row sm:items-center">
         <div class="max-w-2xl">
-          <p class="text-xs font-semibold tracking-widest text-[#d0bd98]">أهلًا بك في ساليكس</p>
-          <h2 class="mt-4 font-bold text-3xl leading-tight sm:text-4xl">اكتشف متجرك القادم المفضّل.</h2>
-          <p class="mt-3 max-w-xl text-sm leading-7 text-white/65">أنشئ حسابك، وتعرّف على تجربة ساليكس مع بدء الإطلاق.</p>
+          <p class="text-xs font-semibold tracking-widest text-[#d0bd98] uppercase">ساليكس للمتاجر والمتسوقين</p>
+          <h2 class="mt-3 font-bold text-3xl leading-tight sm:text-4xl">نعيد تعريف الاكتشاف المحلي.</h2>
+          <p class="mt-3 max-w-xl text-sm leading-7 text-white/70">هدفنا توفير منصة متكاملة تدعم أصحاب التجارة المستقلة وتمنح المتسوق تجربة فريدة.</p>
         </div>
-        <a href="#register" class="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-[#f2e8d7] px-7 text-sm font-semibold text-[#292a23] transition hover:-translate-y-0.5 hover:bg-white">
-          إنشاء حساب
-          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <a href="mailto:barqaday@gmail.com" class="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-[#f2e8d7] px-8 text-sm font-semibold text-[#292a23] transition hover:-translate-y-0.5 hover:bg-white">
+          تواصل معنا
+          <i data-lucide="mail" class="w-4 h-4"></i>
         </a>
       </div>
     </div>
   </section>
 
   <!-- الفوتر -->
-  <footer id="contact" class="border-t border-[#eeece5] bg-white/45">
+  <footer id="contact" class="border-t border-[#eeece5] bg-white/50">
     <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-8 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-12">
       <div>
         <a href="#" class="font-extrabold text-xl text-[#25261f]">ساليكس</a>
-        <p class="mt-3 max-w-sm text-xs leading-6 text-[#85837a]">
-          ساليكس منصة عربية لاكتشاف المتاجر المستقلة والتواصل مع أصحابها.
+        <p class="mt-2 max-w-sm text-xs leading-6 text-[#85837a]">
+          منصة عربية لاكتشاف المتاجر المستقلة والتواصل مع صُناعها.
         </p>
       </div>
-      <nav aria-label="روابط" class="flex flex-wrap gap-x-6 gap-y-3 text-xs text-[#68675f]">
+      <nav aria-label="روابط" class="flex flex-wrap gap-x-6 gap-y-3 text-xs font-medium text-[#68675f]">
         <a href="#" class="transition hover:text-[#25261f]">سياسة الخصوصية</a>
         <a href="#" class="transition hover:text-[#25261f]">شروط الاستخدام</a>
         <a href="mailto:barqaday@gmail.com" class="transition hover:text-[#25261f]">barqaday@gmail.com</a>
       </nav>
       <p class="text-xs text-[#96948b]">© 2026 ساليكس. جميع الحقوق محفوظة.</p>
-    </div>
-    <div class="mx-auto flex max-w-7xl items-center gap-2 px-5 pb-7 text-[11px] leading-5 text-[#96948b] sm:px-8 lg:px-12">
-      <i data-lucide="shield-check" class="w-4 h-4 shrink-0"></i>
-      <span>نحرص على تجربة آمنة، مع أدوات للإبلاغ عن المحتوى وحظر المستخدمين داخل التطبيق.</span>
     </div>
   </footer>
 
