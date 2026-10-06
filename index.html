@@ -1,234 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ساليكس | وجهتك لاكتشاف المتاجر المستقلة</title>
-  <meta name="description" content="ساليكس منصة عربية تجسر الفجوة بين المتاجر المستقلة والمتسوقين عبر تقديم تجربة اكتشاف فريدة وتواصل مباشر." />
-  
-  <!-- الخطوط من Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-  
-  <!-- مكتبة Tailwind CSS للتنسيق -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- مكتبة الأيقونات Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f4ed">
+    <meta
+      name="description"
+      content="ساليكس مشروع منصة عربية للتسوّق الاجتماعي، يقرّب المتسوقين من المتاجر المستقلة عبر اكتشاف المنتجات وصفحات المتاجر والتواصل المباشر."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar">
+    <meta property="og:title" content="ساليكس | سوق يقرّبك من المتاجر المستقلة">
+    <meta
+      property="og:description"
+      content="منصة عربية قيد التطوير لاكتشاف المنتجات والمتاجر المستقلة والتواصل المباشر بين المتسوق وصاحب المتجر."
+    >
+    <title>ساليكس | سوق يقرّبك من المتاجر المستقلة</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="ساليكس، الصفحة الرئيسية">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <path d="M20 2C11.2 8 6 15 6 22.5C6 30.5 12.3 37 20 37C27.7 37 34 30.5 34 22.5C34 15 28.8 8 20 2Z" fill="currentColor"/>
+          <path d="M20 12C16 16 13.5 19.8 13.5 23.5C13.5 27.6 16.4 31 20 31" stroke="#FAF8F5" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">Salix</span>
+      </a>
 
-  <style>
-    body {
-      font-family: 'Tajawal', sans-serif;
-    }
-  </style>
-</head>
-<body class="relative min-h-screen overflow-x-hidden bg-[radial-gradient(ellipse_at_75%_5%,rgba(210,190,155,0.23),transparent_48%),linear-gradient(180deg,#f4efe6_0%,#faf8f5_680px)] text-[#25261f]">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="فتح القائمة">
+        <span></span>
+        <span></span>
+      </button>
 
-  <!-- الشريط العلوي / الهيدر -->
-  <header class="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-6 sm:px-8 lg:px-12">
-    <a href="#" class="flex items-center gap-2.5 font-extrabold text-2xl tracking-tight text-[#25261f]">
-      <span class="flex size-9 items-center justify-center rounded-xl bg-[#25261f] text-white font-bold text-lg">S</span>
-      ساليكس
-    </a>
-    <nav aria-label="التنقل الرئيسي" class="hidden items-center gap-8 text-sm font-medium text-[#68675f] md:flex">
-      <a href="#about" class="transition hover:text-[#25261f]">عن المنصة</a>
-      <a href="#experience" class="transition hover:text-[#25261f]">كيف تعمل</a>
-      <a href="#contact" class="transition hover:text-[#25261f]">تواصل معنا</a>
-    </nav>
-    <a href="#about" class="inline-flex items-center gap-2 rounded-full border border-[#d9d5cc] bg-white/80 px-5 py-2.5 text-sm font-semibold text-[#25261f] shadow-sm transition hover:bg-white hover:border-[#aaa18f]">
-      اكتشف المزيد
-      <i data-lucide="arrow-down" class="w-4 h-4"></i>
-    </a>
-  </header>
-
-  <!-- القسم الرئيسي / البطل -->
-  <section class="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-8 sm:px-8 sm:pt-12 lg:grid-cols-[1fr_0.9fr] lg:gap-16 lg:px-12 lg:pb-28 lg:pt-16">
-    <div class="relative z-10 max-w-2xl">
-      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-[#d9d0bf] bg-white/80 px-4 py-2 text-xs font-semibold text-[#655c4c] shadow-sm">
-        <span class="size-2 rounded-full bg-[#9a8055]"></span>
-        سوق عربي للمتاجر المستقلة
-      </div>
-      <h1 class="font-bold text-4xl leading-[1.25] tracking-tight sm:text-6xl lg:text-[58px]">
-        أشياء تحبّها،<br />
-        <span class="text-[#90764c]">من ناس يصنعونها.</span>
-      </h1>
-      <p class="mt-6 max-w-xl text-base leading-8 text-[#68675f] sm:text-lg sm:leading-9">
-        ساليكس مساحة تجمع المتاجر المستقلة والمنتجات المميزة في تجربة عربية فريدة. اكتشف المنتجات الفريدة وتعرف على صُناعها وتواصل معهم مباشرةً.
-      </p>
-      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-        <a href="#experience" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#25261f] px-8 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(37,38,31,0.16)] transition hover:-translate-y-0.5 hover:bg-[#44453b]">
-          استكشف تجربة ساليكس
-          <i data-lucide="arrow-left" class="w-4 h-4"></i>
-        </a>
-      </div>
-      <p class="mt-5 text-xs leading-6 text-[#85837a]">
-        منصة مخصصة لإبراز الهوية العربية ودعم المشاريع والتجار المستقلين.
-      </p>
-    </div>
-
-    <!-- المعاينة التفاعلية -->
-    <div class="relative mx-auto w-full max-w-[540px]">
-      <div class="absolute -right-6 top-10 size-32 rounded-full bg-[#d8c5a3]/40 blur-3xl sm:size-48"></div>
-      <div class="absolute -bottom-8 -left-4 size-36 rounded-full bg-[#c8d0ba]/55 blur-3xl sm:size-52"></div>
-      <div class="relative rounded-[34px] border border-white/80 bg-white/65 p-3 shadow-[0_32px_90px_rgba(68,58,42,0.15)] backdrop-blur-sm sm:rounded-[42px] sm:p-5">
-        <div class="overflow-hidden rounded-[27px] border border-[#eeece5] bg-[#fbfaf7] sm:rounded-[32px]">
-          <div class="flex items-center justify-between border-b border-[#efede7] px-5 py-4">
-            <span class="text-[11px] font-medium text-[#929087]">مساحة تلتقي فيها الحكايات</span>
-            <span class="flex items-center gap-2 text-sm font-semibold">
-              <span class="size-2 rounded-full bg-[#a78b5d]"></span>
-              اكتشف
-            </span>
-          </div>
-          <div class="grid grid-cols-2 gap-3 p-4 sm:gap-4 sm:p-5">
-            <div class="col-span-2 flex min-h-[190px] flex-col justify-between overflow-hidden rounded-[25px] bg-[#e9e0d1] p-5 sm:min-h-[220px] sm:p-6">
-              <div class="flex items-center justify-between">
-                <span class="rounded-full bg-white/80 px-3 py-1 text-[11px] font-semibold text-[#645843]">اختيارات حصرية</span>
-                <i data-lucide="heart" class="w-4 h-4 text-[#806d4f]"></i>
-              </div>
-              <div class="relative">
-                <p class="relative font-bold text-2xl leading-tight text-[#403b31] sm:text-3xl">
-                  قطع تختارها<br />بقلبك.
-                </p>
-              </div>
-            </div>
-            <div class="rounded-[22px] border border-[#efede7] bg-white p-3.5 sm:p-4">
-              <div class="mb-3 flex aspect-[1.08] items-center justify-center rounded-[17px] bg-[#e5e9dc]">
-                <i data-lucide="package" class="w-8 h-8 text-[#647259]"></i>
-              </div>
-              <p class="text-xs font-semibold">تفاصيل تصنع الفرق</p>
-              <p class="mt-1 text-[10px] text-[#85837a]">منتجات مصممة بحب</p>
-            </div>
-            <div class="rounded-[22px] border border-[#efede7] bg-white p-3.5 sm:p-4">
-              <div class="mb-3 flex aspect-[1.08] items-center justify-center rounded-[17px] bg-[#e9e3ee]">
-                <i data-lucide="store" class="w-8 h-8 text-[#706180]"></i>
-              </div>
-              <p class="text-xs font-semibold">متاجر لها حكاية</p>
-              <p class="mt-1 text-[10px] text-[#85837a]">تعرّف على القائمين عليها</p>
-            </div>
-          </div>
-          <div class="flex items-center justify-around border-t border-[#efede7] bg-white/80 px-3 py-3 text-[#8a887f]">
-            <i data-lucide="compass" class="w-4 h-4"></i>
-            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
-            <i data-lucide="heart" class="w-4 h-4"></i>
-            <i data-lucide="message-circle" class="w-4 h-4"></i>
-          </div>
-        </div>
-      </div>
-      <div class="absolute -bottom-5 right-2 flex items-center gap-3 rounded-2xl border border-white/80 bg-white px-4 py-3 shadow-[0_12px_32px_rgba(68,58,42,0.12)] sm:-right-5 sm:bottom-7">
-        <span class="flex size-9 items-center justify-center rounded-full bg-[#edf0e8] text-[#5a6d50]">
-          <i data-lucide="badge-check" class="w-5 h-5"></i>
-        </span>
-        <span>
-          <span class="block text-xs font-semibold">تواصل مباشر</span>
-          <span class="mt-0.5 block text-[10px] text-[#85837a]">بين المتسوق وصاحب المتجر</span>
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <!-- قسم الرؤية والمميزات -->
-  <section id="about" class="relative border-y border-[#eeece5] bg-white/60">
-    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-12 lg:py-24">
-      <div>
-        <p class="text-xs font-bold tracking-widest text-[#92794f] uppercase">فكرتنا</p>
-        <h2 class="mt-3 max-w-md font-bold text-3xl leading-tight sm:text-4xl text-[#25261f]">
-          لأن وراء كل قطعة جميلة حكاية تستحق أن تُروى.
-        </h2>
-        <p class="mt-5 max-w-md text-sm leading-7 text-[#717067]">
-          نعمل في ساليكس على تقريب المسافة بين من يبحث عن المنتج الفريد، وبين المتجر المستقل الذي صنعه أو اختاره بعناية. تجربة تسوق ذات طابع إنساني وأصيل.
-        </p>
-      </div>
-      <div class="grid gap-4 sm:grid-cols-3">
-        <article class="rounded-[24px] border border-[#eeece5] bg-[#fffefa] p-5 sm:p-6 shadow-sm">
-          <span class="flex size-11 items-center justify-center rounded-2xl bg-[#f1e5d5] text-[#765b37]">
-            <i data-lucide="compass" class="w-5 h-5"></i>
-          </span>
-          <h3 class="mt-5 text-sm font-bold text-[#25261f]">اكتشف ما يلهمك</h3>
-          <p class="mt-2 text-xs leading-6 text-[#77766e]">تصفّح منتجات ومتاجر صُممت بشغف واستلهم أفكارك بأسلوب بسيط.</p>
-        </article>
-
-        <article class="rounded-[24px] border border-[#eeece5] bg-[#fffefa] p-5 sm:p-6 shadow-sm">
-          <span class="flex size-11 items-center justify-center rounded-2xl bg-[#e5e9dc] text-[#536447]">
-            <i data-lucide="store" class="w-5 h-5"></i>
-          </span>
-          <h3 class="mt-5 text-sm font-bold text-[#25261f]">مساحة لكل متجر</h3>
-          <p class="mt-2 text-xs leading-6 text-[#77766e]">واجهة مستقلة لكل تاجر يعرض فيها هوية متجره وقصته وتفاصيل منتجاته.</p>
-        </article>
-
-        <article class="rounded-[24px] border border-[#eeece5] bg-[#fffefa] p-5 sm:p-6 shadow-sm">
-          <span class="flex size-11 items-center justify-center rounded-2xl bg-[#e8e3ef] text-[#655579]">
-            <i data-lucide="message-circle" class="w-5 h-5"></i>
-          </span>
-          <h3 class="mt-5 text-sm font-bold text-[#25261f]">تواصل مباشر</h3>
-          <p class="mt-2 text-xs leading-6 text-[#77766e]">استفسر عن أي تفاصيل مباشرةً من صاحب المتجر لتجربة شراء مريحة.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- خطوات العمل -->
-  <section id="experience" class="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
-    <div class="mx-auto max-w-2xl text-center">
-      <p class="text-xs font-bold tracking-widest text-[#92794f] uppercase">آلية العمل</p>
-      <h2 class="mt-3 font-bold text-3xl sm:text-4xl text-[#25261f]">تجربة واضحة وبسيطة للجميع</h2>
-    </div>
-    <div class="mt-12 grid gap-5 sm:grid-cols-3">
-      <article class="relative rounded-[26px] border border-[#eeece5] bg-white/70 p-6 sm:p-8 shadow-sm">
-        <span class="font-extrabold text-4xl text-[#b29a70]">٠١</span>
-        <h3 class="mt-4 text-base font-bold text-[#25261f]">تصفّح واكتشف</h3>
-        <p class="mt-2 text-sm leading-7 text-[#77766e]">استكشف المنتجات والمتاجر المميزة بمرونة وسلاسة عالية.</p>
-      </article>
-      <article class="relative rounded-[26px] border border-[#eeece5] bg-white/70 p-6 sm:p-8 shadow-sm">
-        <span class="font-extrabold text-4xl text-[#b29a70]">٠٢</span>
-        <h3 class="mt-4 text-base font-bold text-[#25261f]">تعرّف على التفاصيل</h3>
-        <p class="mt-2 text-sm leading-7 text-[#77766e]">اطّلع على مواصفات القطع وقصة المتجر وصانع المنتج.</p>
-      </article>
-      <article class="relative rounded-[26px] border border-[#eeece5] bg-white/70 p-6 sm:p-8 shadow-sm">
-        <span class="font-extrabold text-4xl text-[#b29a70]">٠٣</span>
-        <h3 class="mt-4 text-base font-bold text-[#25261f]">تواصل وسهولة طلب</h3>
-        <p class="mt-2 text-sm leading-7 text-[#77766e]">تواصل مباشرة مع التاجر للإجابة عن أسئلتك قبل الشراء.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- قسم التعريف والتواصل -->
-  <section class="px-5 pb-16 sm:px-8 sm:pb-20 lg:px-12">
-    <div class="relative mx-auto max-w-7xl overflow-hidden rounded-[32px] bg-[#292a23] px-6 py-12 text-white sm:rounded-[40px] sm:px-12 sm:py-16 lg:px-16">
-      <div class="relative flex flex-col justify-between gap-8 sm:flex-row sm:items-center">
-        <div class="max-w-2xl">
-          <p class="text-xs font-semibold tracking-widest text-[#d0bd98] uppercase">ساليكس للمتاجر والمتسوقين</p>
-          <h2 class="mt-3 font-bold text-3xl leading-tight sm:text-4xl">نعيد تعريف الاكتشاف المحلي.</h2>
-          <p class="mt-3 max-w-xl text-sm leading-7 text-white/70">هدفنا توفير منصة متكاملة تدعم أصحاب التجارة المستقلة وتمنح المتسوق تجربة فريدة.</p>
-        </div>
-        <a href="mailto:barqaday@gmail.com" class="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-[#f2e8d7] px-8 text-sm font-semibold text-[#292a23] transition hover:-translate-y-0.5 hover:bg-white">
-          تواصل معنا
-          <i data-lucide="mail" class="w-4 h-4"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- الفوتر -->
-  <footer id="contact" class="border-t border-[#eeece5] bg-white/50">
-    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-8 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-12">
-      <div>
-        <a href="#" class="font-extrabold text-xl text-[#25261f]">ساليكس</a>
-        <p class="mt-2 max-w-sm text-xs leading-6 text-[#85837a]">
-          منصة عربية لاكتشاف المتاجر المستقلة والتواصل مع صُناعها.
-        </p>
-      </div>
-      <nav aria-label="روابط" class="flex flex-wrap gap-x-6 gap-y-3 text-xs font-medium text-[#68675f]">
-        <a href="#" class="transition hover:text-[#25261f]">سياسة الخصوصية</a>
-        <a href="#" class="transition hover:text-[#25261f]">شروط الاستخدام</a>
-        <a href="mailto:barqaday@gmail.com" class="transition hover:text-[#25261f]">barqaday@gmail.com</a>
+      <nav class="main-nav" id="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#about">عن المشروع</a>
+        <a href="#experience">طريقة الاستخدام</a>
+        <a href="#founder">المؤسس والمطوّر</a>
       </nav>
-      <p class="text-xs text-[#96948b]">© 2026 ساليكس. جميع الحقوق محفوظة.</p>
-    </div>
-  </footer>
 
-  <!-- تفعيل الأيقونات -->
-  <script>
-    lucide.createIcons();
-  </script>
-</body>
+      <a class="button button-dark header-cta" href="mailto:barqaday@gmail.com">
+        تواصل معنا
+        <span class="arrow" aria-hidden="true">←</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> مشروع منصة عربية قيد التطوير</div>
+          <h1>سوق يقرّبك<br><span>من أصحاب المتاجر.</span></h1>
+          <p class="hero-description">
+            ساليكس منصة للتسوّق الاجتماعي تجمع اكتشاف المنتجات، صفحات المتاجر،
+            والتواصل المباشر بين المتسوق وصاحب المتجر — في تجربة عربية واحدة.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#about">
+              تعرّف على المشروع
+              <span class="arrow" aria-hidden="true">←</span>
+            </a>
+            <a class="button button-outline" href="mailto:barqaday@gmail.com">راسل المطوّر</a>
+          </div>
+          <p class="launch-note">الموقع تعريفي بالمشروع. لا يتضمن تسجيل حساب أو شراء منتجات.</p>
+        </div>
+
+        <div class="showcase" role="img" aria-label="تصميم توضيحي لتجربة اكتشاف المنتجات والمتاجر في ساليكس">
+          <div class="showcase-glow glow-one"></div>
+          <div class="showcase-glow glow-two"></div>
+          <div class="showcase-frame">
+            <div class="mock-screen">
+              <div class="mock-topbar">
+                <span>مساحة تلتقي فيها الحكايات</span>
+                <span class="discover-label"><i></i> اكتشف</span>
+              </div>
+              <div class="mock-content">
+                <div class="feature-tile">
+                  <div class="tile-top">
+                    <span class="tag">اختيارات مستقلة</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+                  </div>
+                  <div class="tile-art" aria-hidden="true">
+                    <span class="art-orbit"></span>
+                    <span class="art-sun"></span>
+                  </div>
+                  <p>قطع تختارها<br>بقلبك.</p>
+                </div>
+                <article class="product-card">
+                  <div class="product-art product-art-green">
+                    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M12 19h24l-2 22H14l-2-22Z" stroke="currentColor" stroke-width="1.6"/><path d="M18 20v-5a6 6 0 0 1 12 0v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M19 28c3 3 7 3 10 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  </div>
+                  <strong>تفاصيل تصنع الفرق</strong>
+                  <span>منتجات من متاجر مستقلة</span>
+                </article>
+                <article class="product-card">
+                  <div class="product-art product-art-lilac">
+                    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M7 20 24 9l17 11v20H7V20Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M18 40V27h12v13M4 20h40" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M17 19v-5h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  </div>
+                  <strong>متاجر لها حكاية</strong>
+                  <span>تعرّف على أصحابها</span>
+                </article>
+              </div>
+              <div class="mock-bottom" aria-hidden="true">
+                <span>⌕</span><span>▱</span><span>♡</span><span>☏</span>
+              </div>
+            </div>
+          </div>
+          <div class="floating-note">
+            <span class="verified-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 19 6v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.6"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span><strong>تواصل مباشر</strong><small>بينك وبين صاحب المتجر</small></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="section-wrap about-grid">
+          <div class="about-copy">
+            <p class="section-kicker">عن المشروع</p>
+            <h2>تجربة واحدة تضع المتجر والمنتج في متناولك.</h2>
+            <p>
+              ساليكس مشروع مستقل يهدف إلى تسهيل اكتشاف المنتجات والمتاجر المحلية
+              ومساعدة أصحاب المشاريع على عرض منتجاتهم وإدارة حضورهم الرقمي. صُممت
+              الفكرة لتجعل الوصول إلى المتجر والتواصل معه أوضح وأبسط.
+            </p>
+          </div>
+          <div class="benefits">
+            <article class="benefit-card">
+              <span class="benefit-icon icon-sand" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.5 4.5M10.8 7v3.8l2.6 1.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <h3>اكتشاف المنتجات</h3>
+              <p>استعرض المنتجات وتعرّف على المتاجر المستقلة من خلال تجربة عربية سهلة.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-icon icon-green" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M3 10 12 3l9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1V10Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+              </span>
+              <h3>أدوات لأصحاب المتاجر</h3>
+              <p>صفحة متجر لعرض المنتجات، مع أدوات لإدارة المنتجات والطلبات والتواصل.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-icon icon-lilac" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 2v-6.5A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 11h8M8 14h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <h3>تواصل بين الطرفين</h3>
+              <p>تواصل مباشر يتيح للمتسوق الاستفسار من صاحب المتجر عن المنتج والطلب.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="audience-section" aria-labelledby="audience-title">
+        <div class="section-wrap audience-inner">
+          <div class="section-heading">
+            <p class="section-kicker">لمن صُممت ساليكس؟</p>
+            <h2 id="audience-title">مساحة مفيدة للمتسوق وصاحب المتجر.</h2>
+            <p class="section-intro">
+              تجمع المنصة بين اكتشاف المنتجات وإدارة المتجر والتواصل حول الطلبات،
+              مع إبقاء تفاصيل البيع والتسليم بين المتجر والعميل.
+            </p>
+          </div>
+          <div class="audience-grid">
+            <article class="audience-card">
+              <span class="audience-number">01</span>
+              <div>
+                <p class="audience-label">للمتسوق</p>
+                <h3>اكتشف، قارن، واسأل.</h3>
+                <p>تصفّح المنتجات وصفحات المتاجر، احفظ ما يهمك، وتواصل مع المتجر لمعرفة التفاصيل قبل الطلب.</p>
+              </div>
+            </article>
+            <article class="audience-card">
+              <span class="audience-number">02</span>
+              <div>
+                <p class="audience-label">لصاحب المتجر</p>
+                <h3>اعرض منتجاتك وأدر متجرك.</h3>
+                <p>أنشئ حضورًا لمتجرك، أضف منتجاتك، تابع المخزون والطلبات، وأجب عن استفسارات العملاء من مساحة واحدة.</p>
+              </div>
+            </article>
+          </div>
+          <p class="scope-note">
+            ساليكس منصة للعرض والتواصل؛ تفاصيل المنتجات والأسعار والتوصيل والاتفاق النهائي
+            تكون مع المتجر مباشرةً.
+          </p>
+        </div>
+      </section>
+
+      <section class="experience-section section-wrap" id="experience">
+        <div class="section-heading">
+          <p class="section-kicker">طريقة الاستخدام</p>
+          <h2>رحلة واضحة من اكتشاف المنتج إلى التواصل مع المتجر.</h2>
+        </div>
+        <div class="steps">
+          <article class="step-card">
+            <span class="step-number">١</span>
+            <span class="step-arrow" aria-hidden="true">↖</span>
+            <h3>تصفّح</h3>
+            <p>تصفّح المنتجات والمنشورات وصفحات المتاجر.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">٢</span>
+            <span class="step-arrow" aria-hidden="true">↖</span>
+            <h3>تعرّف</h3>
+            <p>راجع تفاصيل المنتج ومعلومات المتجر المعروضة.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">٣</span>
+            <span class="step-arrow" aria-hidden="true">↖</span>
+            <h3>تواصل</h3>
+            <p>استفسر من المتجر واتفق معه على تفاصيل الطلب.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="founder-section section-wrap" id="founder">
+        <div class="founder-card">
+          <div class="founder-mark" aria-hidden="true">ن</div>
+          <div class="founder-copy">
+            <p class="section-kicker">المؤسس والمطوّر</p>
+            <h2>استبرق ناجي</h2>
+            <p>
+              أعمل على تطوير ساليكس كمشروع مستقل يهدف إلى تقديم تجربة عربية تجمع
+              المتاجر المستقلة بالمتسوقين، مع التركيز على وضوح رحلة الاستخدام
+              وسهولة التواصل.
+            </p>
+          </div>
+          <a class="founder-contact" href="mailto:barqaday@gmail.com">
+            تواصل مع المطوّر
+            <span aria-hidden="true">←</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="closing-section section-wrap" id="contact">
+        <div class="closing-card">
+          <div class="closing-decoration" aria-hidden="true"></div>
+          <div class="closing-copy">
+            <p class="section-kicker">للاستفسارات والتواصل</p>
+            <h2>هل ترغب بمعرفة المزيد عن المشروع؟</h2>
+            <p>يسعد المؤسس والمطوّر استقبال استفساراتك وملاحظاتك عبر البريد الإلكتروني.</p>
+          </div>
+          <a class="button button-light" href="mailto:barqaday@gmail.com">
+            barqaday@gmail.com
+            <span class="arrow" aria-hidden="true">←</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main section-wrap">
+        <div class="footer-brand">
+          <a class="brand" href="#home" aria-label="ساليكس، الصفحة الرئيسية">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <path d="M20 2C11.2 8 6 15 6 22.5C6 30.5 12.3 37 20 37C27.7 37 34 30.5 34 22.5C34 15 28.8 8 20 2Z" fill="currentColor"/>
+              <path d="M20 12C16 16 13.5 19.8 13.5 23.5C13.5 27.6 16.4 31 20 31" stroke="#FAF8F5" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="brand-name">Salix</span>
+          </a>
+          <p>ساليكس مشروع منصة عربية للتسوّق الاجتماعي، قيد التطوير.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">عن المشروع</a>
+          <a href="#founder">المؤسس والمطوّر</a>
+          <a href="mailto:barqaday@gmail.com">barqaday@gmail.com</a>
+        </div>
+        <p class="copyright">© <span id="current-year">2026</span> ساليكس. جميع الحقوق محفوظة.</p>
+      </div>
+      <div class="trust-note section-wrap">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 19 6v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.6"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>المعلومات في هذه الصفحة تعريفية عن المشروع. لا تنشئ الصفحة حسابات ولا تجمع بيانات الزوار عبر نماذج.</span>
+      </div>
+    </footer>
+  </body>
 </html>
